@@ -62,18 +62,18 @@ sequenceDiagram
 
 ## Steps summary
 
-| Step | Action |
-|------|--------|
-| 1–2 | User approves concepts; Frontend sends approved concept IDs |
-| 3 | Backend loads approved concepts and session context |
-| 4 | AI Orchestration builds prompt from concepts, context, rules, schema, and examples |
-| 5 | AI Provider returns structured JSON items |
-| 6 | Backend sends generated JSON to Validation Engine |
-| 7 | Validation Engine checks JSON, schema, balance, duplicates, and references |
-| 8 | Backend stores generated items and validation report in Database |
-| 9 | Frontend displays validation results |
-| 10 | Invalid items: user triggers AI auto-fix or manual edit, then re-validation |
-| 11 | On pass: Frontend renders preview from JSON only |
+| Step | Action                                                                             |
+| ---- | ---------------------------------------------------------------------------------- |
+| 1–2  | User approves concepts; Frontend sends approved concept IDs                        |
+| 3    | Backend loads approved concepts and session context                                |
+| 4    | AI Orchestration builds prompt from concepts, context, rules, schema, and examples |
+| 5    | AI Provider returns structured JSON items                                          |
+| 6    | Backend sends generated JSON to Validation Engine                                  |
+| 7    | Validation Engine checks JSON, schema, balance, duplicates, and references         |
+| 8    | Backend stores generated items and validation report in Database                   |
+| 9    | Frontend displays validation results                                               |
+| 10   | Invalid items: user triggers AI auto-fix or manual edit, then re-validation        |
+| 11   | On pass: Frontend renders preview from JSON only                                   |
 
 ## Data flow note
 

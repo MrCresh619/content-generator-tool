@@ -1,0 +1,13 @@
+﻿node_modules
+dist
+.vite
+
+apps/api/.venv
+apps/web/node_modules
+
+data
+coverage
+htmlcov
+
+uv.lock
+package-lock.json

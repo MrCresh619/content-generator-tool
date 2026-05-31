@@ -57,20 +57,20 @@ flowchart TD
 
 ## Component responsibilities
 
-| Component | Responsibility |
-|-----------|----------------|
-| Browser / Frontend App | UI, file upload, review, approval, human-readable preview, download |
-| Backend API | Entry point for sessions, files, prompts, AI calls, validation, export |
-| Session Service | Generation session lifecycle and state |
-| File Upload Service | Accepts and stores user project files |
-| File Storage | Uploaded files and generated export artifacts |
-| Database | Session metadata, file metadata, concepts, generated items, validation reports, export records |
-| AI Orchestration Service | Prompt assembly, AI call sequencing, response handling |
-| AI Provider API | Generates understanding summaries, draft concepts, structured JSON |
-| Schema Inference Service | Detects and applies output schema from uploaded files |
-| Validation Engine | JSON validity, schema, balance, duplicates, reference checks |
-| Export Service | Builds JSON or ZIP packages (content, manifest, validation report, summary) |
-| JSON / ZIP Download | Delivers final export package to the user |
+| Component                | Responsibility                                                                                 |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| Browser / Frontend App   | UI, file upload, review, approval, human-readable preview, download                            |
+| Backend API              | Entry point for sessions, files, prompts, AI calls, validation, export                         |
+| Session Service          | Generation session lifecycle and state                                                         |
+| File Upload Service      | Accepts and stores user project files                                                          |
+| File Storage             | Uploaded files and generated export artifacts                                                  |
+| Database                 | Session metadata, file metadata, concepts, generated items, validation reports, export records |
+| AI Orchestration Service | Prompt assembly, AI call sequencing, response handling                                         |
+| AI Provider API          | Generates understanding summaries, draft concepts, structured JSON                             |
+| Schema Inference Service | Detects and applies output schema from uploaded files                                          |
+| Validation Engine        | JSON validity, schema, balance, duplicates, reference checks                                   |
+| Export Service           | Builds JSON or ZIP packages (content, manifest, validation report, summary)                    |
+| JSON / ZIP Download      | Delivers final export package to the user                                                      |
 
 ## Data flow summary
 

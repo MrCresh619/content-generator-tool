@@ -1,0 +1,35 @@
+{
+  "name": "content-generator-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:web": "npm --prefix apps/web run lint --fix",
+    "lint:api": "cd apps/api && uv run ruff check .",
+    "lint": "npm run lint:web && npm run lint:api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCresh619/content-generator-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MrCresh619/content-generator-tool/issues"
+  },
+  "homepage": "https://github.com/MrCresh619/content-generator-tool#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "prettier": "^3.8.3"
+  }
+}

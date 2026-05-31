@@ -48,20 +48,20 @@ flowchart TD
 
 ## Stage descriptions
 
-| Stage | Description |
-|-------|-------------|
-| Uploaded files | Raw project files with assigned roles |
-| Parsed file contents | Extracted text and structured data from uploads |
-| Session context | Combined session state, file metadata, and roles |
-| AI understanding summary | AI interpretation of project files and constraints |
-| User corrections | User-approved or edited understanding |
-| Generation configuration | Element count, content type, and generation settings |
-| Draft concepts | Title, short concept, and tags per item |
-| Approved concepts | Concepts accepted for full JSON generation |
-| Structured generated JSON | Source-of-truth content output |
-| Validation report | Schema, balance, duplicate, and reference check results |
-| Human-readable preview from JSON | Display layer derived only from valid JSON |
-| Export package | JSON or ZIP with content, manifest, report, and summary |
+| Stage                            | Description                                             |
+| -------------------------------- | ------------------------------------------------------- |
+| Uploaded files                   | Raw project files with assigned roles                   |
+| Parsed file contents             | Extracted text and structured data from uploads         |
+| Session context                  | Combined session state, file metadata, and roles        |
+| AI understanding summary         | AI interpretation of project files and constraints      |
+| User corrections                 | User-approved or edited understanding                   |
+| Generation configuration         | Element count, content type, and generation settings    |
+| Draft concepts                   | Title, short concept, and tags per item                 |
+| Approved concepts                | Concepts accepted for full JSON generation              |
+| Structured generated JSON        | Source-of-truth content output                          |
+| Validation report                | Schema, balance, duplicate, and reference check results |
+| Human-readable preview from JSON | Display layer derived only from valid JSON              |
+| Export package                   | JSON or ZIP with content, manifest, report, and summary |
 
 ## Branching rules
 

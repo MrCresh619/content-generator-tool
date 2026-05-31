@@ -44,11 +44,11 @@ flowchart TD
 
 ## Navigation notes
 
-| From | Loop | Destination |
-|------|------|-------------|
-| AI Understanding Summary | Revise files | Upload Files |
-| AI Understanding Summary | Edit notes | Assign File Roles |
-| Concept Selection | Regenerate concepts | Concept Selection (same screen) |
-| Final Review | Edit selected items | Validation Results |
+| From                     | Loop                | Destination                     |
+| ------------------------ | ------------------- | ------------------------------- |
+| AI Understanding Summary | Revise files        | Upload Files                    |
+| AI Understanding Summary | Edit notes          | Assign File Roles               |
+| Concept Selection        | Regenerate concepts | Concept Selection (same screen) |
+| Final Review             | Edit selected items | Validation Results              |
 
 Session History lets users browse past sessions, return home, or continue an in-progress session from Upload Files.

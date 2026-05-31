@@ -130,18 +130,18 @@ classDiagram
 
 ## Entity overview
 
-| Entity | Purpose |
-|--------|---------|
-| GenerationSession | Root aggregate for a single content generation workflow |
-| UploadedFile | User-provided project file stored and assigned a role |
-| FileRole | Category that tells AI how to interpret each file |
-| AIUnderstandingSummary | AI interpretation of uploaded files, schema, and rules |
-| GenerationRequest | User configuration for how many items to generate |
-| DraftConcept | Lightweight concept (title, summary, tags) awaiting approval |
-| GeneratedContentItem | Full structured JSON output for an approved concept |
-| ValidationReport | Result of validating generated content for a session |
-| ValidationIssue | Single validation error or warning on a content item |
-| ExportPackage | Downloadable JSON or ZIP artifact for a completed session |
+| Entity                 | Purpose                                                      |
+| ---------------------- | ------------------------------------------------------------ |
+| GenerationSession      | Root aggregate for a single content generation workflow      |
+| UploadedFile           | User-provided project file stored and assigned a role        |
+| FileRole               | Category that tells AI how to interpret each file            |
+| AIUnderstandingSummary | AI interpretation of uploaded files, schema, and rules       |
+| GenerationRequest      | User configuration for how many items to generate            |
+| DraftConcept           | Lightweight concept (title, summary, tags) awaiting approval |
+| GeneratedContentItem   | Full structured JSON output for an approved concept          |
+| ValidationReport       | Result of validating generated content for a session         |
+| ValidationIssue        | Single validation error or warning on a content item         |
+| ExportPackage          | Downloadable JSON or ZIP artifact for a completed session    |
 
 ## Key relationships
 

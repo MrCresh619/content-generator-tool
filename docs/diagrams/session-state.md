@@ -49,14 +49,14 @@ stateDiagram-v2
 
 ## State groups
 
-| Group | States |
-|-------|--------|
-| Setup | Draft, FilesUploaded, FilesAnalyzed |
-| AI understanding | SummaryPendingApproval, SummaryRejected, SummaryApproved |
-| Concepts | ConceptsGenerating, ConceptsGenerated, ConceptsReview, ConceptsApproved |
+| Group                | States                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------------------ |
+| Setup                | Draft, FilesUploaded, FilesAnalyzed                                                        |
+| AI understanding     | SummaryPendingApproval, SummaryRejected, SummaryApproved                                   |
+| Concepts             | ConceptsGenerating, ConceptsGenerated, ConceptsReview, ConceptsApproved                    |
 | Content & validation | ContentGenerating, ContentGenerated, ValidationRunning, ValidationFailed, ValidationPassed |
-| Completion | FinalReview, Exported |
-| Terminal | Exported, Failed, Cancelled |
+| Completion           | FinalReview, Exported                                                                      |
+| Terminal             | Exported, Failed, Cancelled                                                                |
 
 ## Transition notes
 
@@ -68,8 +68,8 @@ stateDiagram-v2
 
 ## Terminal states
 
-| State | Meaning |
-|-------|---------|
-| Exported | Session completed; JSON or ZIP available for download |
-| Failed | Unrecoverable error halted the session |
-| Cancelled | User explicitly cancelled an in-progress session |
+| State     | Meaning                                               |
+| --------- | ----------------------------------------------------- |
+| Exported  | Session completed; JSON or ZIP available for download |
+| Failed    | Unrecoverable error halted the session                |
+| Cancelled | User explicitly cancelled an in-progress session      |

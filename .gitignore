@@ -1,0 +1,58 @@
+﻿# Dependencies
+node_modules/
+apps/web/node_modules/
+
+# Frontend build output
+apps/web/dist/
+apps/web/.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+apps/api/.venv/
+
+# Python tooling cache
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+apps/api/.env
+apps/web/.env
+
+# Local app data
+data/app.db
+data/uploads/*
+data/exports/*
+!data/uploads/.gitkeep
+!data/exports/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+
+# Generated files
+apps/web/src/shared/api/generated/
