@@ -1,0 +1,13 @@
+---
+description: Frontend constraints (React). Active in apps/web/.
+globs: apps/web/**
+alwaysApply: false
+---
+# Frontend Rules
+- Tech Stack: React, Vite, TS, TanStack Query, Zod, React Hook Form, Tailwind CSS.
+- Architecture: Feature-based architecture.
+- Import Direction: `pages` -> `features` -> `shared`.
+- Constraints: `features` MUST NOT import each other directly; compose them at the `pages` level.
+- Constraints: `shared` CANNOT import `features`. `shared` is strictly for reusable UI/utils, no domain logic.
+- Feature Module Structure: strictly divided into `api/`, `model/`, `hooks/`, `components/`.
+- State: Avoid Zustand initially; use local state unless it becomes too complex.

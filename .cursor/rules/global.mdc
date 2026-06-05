@@ -1,0 +1,11 @@
+---
+description: Global project constraints. Always active.
+globs: *
+alwaysApply: true
+---
+# Global Rules
+- Architecture: Single monorepo, no Turborepo.
+- Core Principle: JSON is the absolute source of truth. Human-readable text is only a preview generated from JSON.
+- API Contract: Backend owns the API. Frontend types are generated from FastAPI OpenAPI.
+- Environment: Local-first via Docker Compose (`make dev`).
+- Database (MVP): SQLite only.

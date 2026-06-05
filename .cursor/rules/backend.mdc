@@ -1,0 +1,14 @@
+---
+description: Backend constraints (FastAPI). Active in apps/api/.
+globs: apps/api/**
+alwaysApply: false
+---
+# Backend Rules
+- Tech Stack: Python, FastAPI, Pydantic, SQLModel, SQLite.
+- Architecture: Modular, strict layer separation.
+- Dependency Direction: `api` -> `application` -> `domain` <- `infrastructure`.
+- `api`: HTTP endpoints and schemas only. No business logic.
+- `domain`: Models and enums. Cannot import API or infrastructure code.
+- `application`: Business logic, services, AI orchestration.
+- `infrastructure`: Database and storage access.
+- Constraints: Direct cross-module imports (e.g., `sessions` importing `concepts`) are strictly forbidden. Use `workflows` for cross-module orchestration.
